@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu País</title>
+</head>
+<body>
+    <h1>Qual seu País</h1>
+    Digite seu País : <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Enviar" onclick="enviar()">
+    <div id="qpais"></div>
+
+    <script>
+        function enviar(){
+            var qpais = window.document.querySelector('input#txtpais')
+
+            var nomep = window.document.querySelector('div#qpais')
+
+            var mostrapais = String(qpais.value)
+
+            if (mostrapais != 'Brasil' && mostrapais != 'BRASIL') {
+            nomep.innerHTML = `<p>Você é <strong>Estrangeiro</strong></p>`
+            } 
+
+            else {
+            nomep.innerHTML = '<p>Você e <strong>Brasileiro</strong></p>'
+            }
+            
+        }
+    </script>
+</body>
+</html>
