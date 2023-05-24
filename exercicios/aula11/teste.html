@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTANDO</title>
+    <style>
+        input {
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+        }
+
+        input#botão {
+            background-color: rgb(255, 254, 254);
+            color: rgb(0, 0, 0);
+            margin-right: 10px;
+            border: 1px solid red;
+        }
+
+        input#botão:hover {
+            background-color: gray;
+            border: 0px;
+        }
+
+        div#numero1 {
+            background-color: gray;
+            width: 210px;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            border-radius: 15px;
+        }
+
+        div#numero2 {
+            margin-top: 15px;
+            background-color: gray;
+            width: 210px;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div id="numero1">Número 1 :<input type="number" name="n1" id="n1" ><br></div>
+    <div id="numero2">Numero 2: <input type="number" name="n2" id="n2" ><br></div>
+    <input type="button" value="Calcular" id="botão" onclick="calcular()">
+    <div id="resul"></div>
+    
+    <script>
+        function calcular(){
+            var num1 = window.document.querySelector('input#n1')
+            var num2 = window.document.querySelector('input#n2')
+            var valor = window.document.querySelector('div#resul')
+
+            var numero1 = Number(num1.value)
+            var numero2 = Number(num2.value)
+
+            var resultado = numero1 + numero2
+
+            valor.innerHTML = `a Soma deu ${resultado}`
+            
+            
+        }
+    </script>
+</body>
+</html>
