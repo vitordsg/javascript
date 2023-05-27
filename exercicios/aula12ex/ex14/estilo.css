@@ -8,6 +8,9 @@ body {
 header {
     color: white;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    text-shadow: 4px 4px 1px rgb(85, 85, 85);
     
 }
 
@@ -15,13 +18,42 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 700px;
+    height: 500px;
     margin: auto;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.527);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.589);
+}
+
+div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    padding: 10px;
+}
+
+div > p {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding: 5px 5px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.733);
+    color: white;
+
+    background: #fde583;
+    border-radius: 10px;
+    
+}
+
+div > img#imagem {  
+    border-radius: 50%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.815);
 }
 
 footer {
+    padding-top: 35px;
     color: white;
     text-align: center;
     font-style: italic;
+    font-weight: bolder;
 }
