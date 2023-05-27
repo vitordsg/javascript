@@ -4,7 +4,7 @@ function carregar () {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
     var paragrafo = window.document.getElementById('paragrafo')
-
+    
     var data = new Date()
     var minutos = data.getMinutes()
     var hora = data.getHours()
