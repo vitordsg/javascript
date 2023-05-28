@@ -2,17 +2,19 @@
 
 body {
     background: rgb(45, 129, 207);
+    
     font: normal 15pt Arial;
 }
 
 header { /* Qual sua Idade / H1 */
-    color: rgb(45, 129, 207);
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.637);
 
+    color: rgb(45, 129, 207);
     background-color: rgb(255, 255, 255);
+
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
