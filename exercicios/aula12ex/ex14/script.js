@@ -15,7 +15,7 @@ function carregar () {
     if (hora >= 0 && hora < 6) {
 
         // BOA MADRUGADA
-        img.src = 'madrugada.png'
+        img.src = '../ex14/imagens/madrugada.png'
         document.body.style.background = '#030b22'
         paragrafo.innerHTML = 'Boa Madrugada!'
         paragrafo.style.background = '#030b22'
@@ -26,17 +26,17 @@ function carregar () {
     } else if (hora >= 6 && hora < 12) {
 
         //BOA DIA
-        img.src = 'tarde.png'
+        img.src = '../ex14/imagens/tarde.png'
         document.body.style.background = '#fde583'
         paragrafo.innerHTML = 'Bom Dia!'
         paragrafo.style.background = '#fde583'
-        msg.innerHTML = `Agora são <strong>${hora}:${minutos} da manhã</strong>`
+        msg.innerHTML = `Agora são <strong>${hora}:0${minutos} da manhã</strong>`
 
 
     } else if (hora >= 12 && hora < 18) {
 
         // BOA TARDE
-        img.src = 'manha.png'
+        img.src = '../ex14/imagens/manha.png'
         document.body.style.background = '#d4a426'
         paragrafo.innerHTML = 'Boa Tarde!'
         paragrafo.style.background = '#d4a426'
@@ -46,7 +46,7 @@ function carregar () {
     } else {
 
         // BOA NOITE
-        img.src = 'noite.png'
+        img.src = '../ex14/imagens/noite.png'
         document.body.style.background = '#392e4c'
         paragrafo.innerHTML = 'Boa Noite!'
         paragrafo.style.background = '#392e4c'
