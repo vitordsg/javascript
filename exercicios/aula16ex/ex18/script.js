@@ -1,7 +1,9 @@
 let num = document.querySelector('input#txtnumero')
 let listas = document.querySelector('select#lista')
 let res = document.querySelector('div#resultado')
-let valores = []
+let valores = [] // ARRAY / VETOR
+
+
 
 function isNumero(n) {
     if(Number(n) >= 1 && Number(n) <= 100) {
@@ -13,6 +15,8 @@ function isNumero(n) {
     }
 }
 
+
+
 function inLista(n, l) {
     if(l.indexOf(Number(n)) != -1) {
         return true
@@ -22,6 +26,8 @@ function inLista(n, l) {
         return false
     }
 }
+
+
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {
