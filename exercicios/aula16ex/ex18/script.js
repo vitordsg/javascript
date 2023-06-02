@@ -32,8 +32,8 @@ function inLista(n, l) {
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {
         
-        valores.push(Number(num.value)) // ADICIONAR O NUMERO DIGITADO NA LISTA
-        let item = document.createElement('option') // CRIAR UMA VARIAVEL / CRIAR UM ELEMENTO
+        valores.push(Number(num.value)) // ADICIONAR O NUMERO DIGITADO NO VETOR/ARRAY
+        let item = document.createElement('option') // CRIAR UM ELEMENTO
         item.text = `Valor adicionado foi ${num.value}` // ADICIONA O VALOR NA LISTA
         listas.appendChild(item) // LISTA RECEBE O FILHO ITEM PARA ADICIONAR A LISTA 
         res.innerHTML = '' // LIMPAR O RESULTADO AO ADICIONAR UM NOVO VALOR
