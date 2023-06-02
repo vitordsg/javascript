@@ -63,7 +63,7 @@ function finalizar() {
         let soma = 0
         let media = 0
 
-        // ANALISA UM POR UM E VERIFICAR QUAL DELES E O MAIOR!
+        
         for (let pos in valores) { 
 
             // SOMA OS VALORES DO VETOR
